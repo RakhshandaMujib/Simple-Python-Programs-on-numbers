@@ -6,9 +6,7 @@ def main():
     choice = input("Do you want to see the first prime number?")
     if choice.lower() == "yes" or choice.lower() == "y":
         choice = input("2\nAnd the next?")
-    else:
-        print("Okay, thank you!")
-   
+        
     prime_num = generatePrime()
     
     while choice.lower() == "yes" or choice.lower() == "y":
