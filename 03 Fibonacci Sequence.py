@@ -16,7 +16,7 @@ def fibo():
 	b = 1
 
 	for number in range(n):
-		yield a
+		yield a #This works much faster than using memoization. 
 		a,b = b,a+b
 			
 if __name__ == '__main__':
