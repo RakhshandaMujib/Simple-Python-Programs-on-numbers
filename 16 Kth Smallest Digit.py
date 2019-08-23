@@ -1,15 +1,7 @@
 def main():
 	k = int(input("Enter the value of k:\t"))
-	print("Enter the numbers in your list: (Enter any alphabet to stop)")
-	list_is = []
-	while True:
-		element = input("\t")
-		if element.lower().isalpha():
-			break
-		else:
-			list_is.append(int(element))
-	print(f"The elements are:\n\t{list_is}")
-
+	list_is = input("Enter the numbers in your list (separated by spaces):\n").split()
+	list_is = [int(item) for item in list_is]
 	if k > len(set(list_is)):
 		print(f"{k} is greater than the number of unique digits entered.")
 	else:
