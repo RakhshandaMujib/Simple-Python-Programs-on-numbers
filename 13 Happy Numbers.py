@@ -27,3 +27,38 @@ def main():
 
 if __name__ == '__main__':
 	main()
+	
+	
+we can also implement this by
+
+def is_Happy(num):
+	res = 0
+	sum = 0 
+	while num>0:
+		rem = num%10
+		sum += rem**2
+		num = num//10
+	return num
+num = int(input())
+reslt = num
+while(result != 1 and result != 4):
+	result = is_Happy(result)
+if result == 1:
+	print(str(num) + " is a happy no.")
+elif (result == 4):
+	print("Not happy no.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
