@@ -12,8 +12,8 @@ def main():
 	#	num = 8 and 8 in binary = 1000
 	#	num - 1 = 7 and 7 in binary = 111 or 0111
 	#   Now,   1000
-	#		 & 0111
-	#		 = 0000 
+	#        & 0111
+	#        = 0000 
 	if not num & num - 1: 
 		print(f'{num} is a power of 2.')
 	else:
